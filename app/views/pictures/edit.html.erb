@@ -1,6 +1,6 @@
-<h1>Add a picture</h1>
+<h1>Edit picture</h1>
+<p><%= link_to "Back", picture_path(@picture) %></p>
 
-<%= link_to "Back to Pictures", pictures_path %>
 <%= form_for @picture do |p| %>
   <p>
     <%= p.label "artist" %><br>
@@ -17,4 +17,4 @@
   <p>
     <%= p.submit "Save" %>
   </p>
-  <% end %>
+<% end %>

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'pictures/new' => 'pictures#new'
 
   get 'pictures/:id' => 'pictures#show', as: "picture"
+  get 'pictures/:id/edit' => 'pictures#edit', as: "edit_picture"
+
+  patch 'pictures/:id' => 'pictures#update'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
