@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   patch 'pictures/:id' => 'pictures#update'
 
+  delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
