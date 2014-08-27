@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+
+* {box-sizing: border-box}
+
+body {
+  color: white;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  background-color: #696969;
+}
+
+h1 {
+  color: #4B0082;
+  font-size: 4em;
+  padding: 0 0 0 0.5em;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h4 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div {
+  max-width: 100%;
+  padding: 0;
+  margin: auto;
+
+}
+
+div.top {
+  display: inline;
+}
+
+div.menu {
+  padding: 0 0 0 0.5em;
+  max-width: 100%;
+}
+
