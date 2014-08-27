@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  resources :pictures
-
+  resources :pictures do
+    resources :comments
+  end
   root :to => 'pictures#index'
 
-  patch 'pictures/:id' => 'pictures#update'
-
-  delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
-
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

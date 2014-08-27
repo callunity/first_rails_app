@@ -1,20 +1,5 @@
 <h1>Add a picture</h1>
 
 <%= link_to "Back to Pictures", pictures_path %>
-<%= form_for @picture do |p| %>
-  <p>
-    <%= p.label "artist" %><br>
-    <%= p.text_field "artist" %>
-  </p>
-  <p>
-    <%= p.label "title" %><br>
-    <%= p.text_field "title" %>
-  </p>
-  <p>
-    <%= p.label "url" %><br>
-    <%= p.text_field "url" %>
-  </p>
-  <p>
-    <%= p.submit "Save" %>
-  </p>
-  <% end %>
+
+<%= render 'form' %>
