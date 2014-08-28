@@ -4,7 +4,16 @@
 
 
 <div class="images">
-  <% @pictures.each do |picture| %>
+  <% @most_recent_pictures.each do |picture| %>
+    <p><h2><%= picture[:title] %></h2> <h4><%= picture[:artist] %></h4></p>
+    <p><%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %></p>
+  <% end %>
+</div>
+
+<h1>Older Pictures</h1>
+
+<div class="images">
+  <% @older_pictures.each do |picture| %>
     <p><h2><%= picture[:title] %></h2> <h4><%= picture[:artist] %></h4></p>
     <p><%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %></p>
   <% end %>
